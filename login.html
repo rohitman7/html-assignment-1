@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Welcome to Login Page</p>
+        <form action="process_login.php" method="post">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="remember">Remember Me:</label>
+                <input type="checkbox" id="remember" name="remember" value="1">
+            </div>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
